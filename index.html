@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <title>Intervalo de Luz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Fundo global -->
+  <div id="dynamic-bg"></div>
+  <div class="bg-overlay"></div>
+
+  <!-- MENU SUPERIOR -->
+  <div class="menu-container">
+    <div class="menu-header">
+      <a href="#" class="site-title">Intervalo de Luz</a>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- OVERLAY DO MENU (TRANSLÚCIDO, REAGE À LUZ DA CENA) -->
+  <div class="menu-overlay" id="menuOverlay">
+    <div class="menu-content">
+      <a href="https://alexxanorafa.github.io/Alquimia-dos-Sentimentos/" class="menu-item">Alquimia dos Sentimentos</a>
+      <a href="https://alexxanorafa.github.io/Almas-Conectadas/" class="menu-item">Almas Conectadas</a>
+      <a href="https://alexxanorafa.github.io/Aneis_da_Sabedoria/" class="menu-item">Anéis da Sabedoria</a>
+      <a href="https://alexxanorafa.github.io/Animais-de-Poder/" class="menu-item">Animais de Poder</a>
+      <a href="https://alexxanorafa.github.io/Biblioteca-Onirica/" class="menu-item">Biblioteca Onirica</a>
+      <a href="https://alexxanorafa.github.io/Buzios/" class="menu-item">Buzios</a>
+      <a href="https://alexxanorafa.github.io/Cartas-de-Sibila/" class="menu-item">Cartas de Sibila</a>
+      <a href="https://alexxanorafa.github.io/Do-you-love-me/" class="menu-item">Do you love me?</a>
+      <a href="https://alexxanorafa.github.io/I-Ching-Virtual/" class="menu-item">I Ching Virtual</a>
+      <a href="https://alexxanorafa.github.io/Jogo-Didatico-Banco-de-Dados/" class="menu-item">Jogo Didatico Banco de Dados</a>
+      <a href="https://alexxanorafa.github.io/Jornada-Arquetipica/" class="menu-item">Jornada Arquetípica</a>
+      <a href="https://alexxanorafa.github.io/Jornadas-Mitologica/" class="menu-item">Jornada Mitológica</a>
+      <a href="https://alexxanorafa.github.io/Kabbalah-Interativa/" class="menu-item">Kabbalah Interativa</a>
+      <a href="https://alexxanorafa.github.io/Livro-das-Sombras/" class="menu-item">Livro das Sombras</a>
+      <a href="https://alexxanorafa.github.io/Magia-das-Cores/" class="menu-item">Magia das Cores</a>
+      <a href="https://alexxanorafa.github.io/Murmurios-do-Destino/" class="menu-item">Murmúrios do Destino</a>
+      <a href="https://alexxanorafa.github.io/O-Construtor-do-Destino/" class="menu-item">O Construtor do Destino</a>
+      <a href="https://alexxanorafa.github.io/Oraculo-das-Pedras/" class="menu-item">Oráculo das Pedras</a>
+      <a href="https://alexxanorafa.github.io/Oraculo-dos-Deuses/" class="menu-item">Oráculo dos Deuses</a>
+      <a href="https://alexxanorafa.github.io/Oraculo-Numerologico/" class="menu-item">Oráculo Numerológico</a>
+      <a href="https://alexxanorafa.github.io/Pendulo-Divinatorio/" class="menu-item">Pendulo Divinatorio</a>
+      <a href="https://alexxanorafa.github.io/Portal-das-Almas/" class="menu-item">Portal das Almas</a>
+      <a href="https://alexxanorafa.github.io/Potencial-Coletivo/" class="menu-item">Potencial Coletivo</a>
+      <a href="https://alexxanorafa.github.io/Runas-Celtas/" class="menu-item">Runas Celtas</a>
+      <a href="https://alexxanorafa.github.io/Runas-Estelares/" class="menu-item">Runas Estelares</a>
+      <a href="https://alexxanorafa.github.io/Runas-do-Destino/" class="menu-item">Runas Nórdicas</a>
+      <a href="https://alexxanorafa.github.io/Simulador-Quantico/" class="menu-item">Simulador Quântico</a>
+      <a href="https://alexxanorafa.github.io/Tabuleiro-Quantico/" class="menu-item">Tabuleiro Quântico</a>
+      <a href="https://alexxanorafa.github.io/TarodeMarselha/" class="menu-item">Tarô de Marselha</a>
+      <a href="https://alexxanorafa.github.io/Tasseografia/" class="menu-item">Tasseografia</a>
+      <a href="https://alexxanorafa.github.io/Tempo_e_Sonhos/" class="menu-item">Tempo e Sonhos</a>
+      <a href="https://alexxanorafa.github.io/The-Da-Vinci-Code/" class="menu-item">The Da Vinci Code</a>
+      <a href="https://alexxanorafa.github.io/Whispering-Shadows/" class="menu-item">Whispering Shadows</a>
+      <a href="https://alexxanorafa.github.io/Whispering-Shadows-2/" class="menu-item">Whispering Shadows 2</a>
+      <a href="https://alexxanorafa.github.io/Whispering-Shadows-3/" class="menu-item">Whispering Shadows 3</a>
+      <a href="https://alexxanorafa.github.io/Xamanismo-Animal/" class="menu-item">Xamanismo Animal</a>
+    </div>
+  </div>
+
+  <div class="page-wrapper">
+    <!-- CONTROLOS DE CAMINHO E ESTADO -->
+    <section class="control-panel">
+      <div class="control-group">
+        <span class="control-label">Caminho</span>
+        <div class="pill-group" id="pathControls">
+          <button data-path="luz" class="pill active">Luz</button>
+          <button data-path="sombra" class="pill">Sombra</button>
+          <button data-path="intervalo" class="pill">Intervalo</button>
+        </div>
+      </div>
+      <div class="control-group">
+        <span class="control-label">Estado</span>
+        <div class="pill-group" id="moodControls">
+          <button data-mood="silencio" class="pill active">Silêncio</button>
+          <button data-mood="fluxo" class="pill">Fluxo</button>
+          <button data-mood="intensidade" class="pill">Intensidade</button>
+        </div>
+      </div>
+      <p class="hint-text">
+        Move, abranda, pára. Cada gesto altera o que a luz escolhe revelar.
+      </p>
+    </section>
+
+    <!-- CENA PRINCIPAL -->
+    <main class="scene">
+      <div class="halo"></div>
+
+      <section class="center-orbit">
+        <div class="core"></div>
+        <div class="arc arc-outer"></div>
+        <div class="arc arc-inner"></div>
+      </section>
+
+      <section class="whisper-layer" aria-hidden="true">
+        <p class="whisper whisper-1"></p>
+        <p class="whisper whisper-2"></p>
+        <p class="whisper whisper-3"></p>
+      </section>
+
+      <!-- HOTSPOTS DE DESCOBERTA -->
+      <button class="hotspot hotspot-1" data-secret="1" aria-label="Descobrir fragmento oculto"></button>
+      <button class="hotspot hotspot-2" data-secret="2" aria-label="Descobrir fragmento oculto"></button>
+      <button class="hotspot hotspot-3" data-secret="3" aria-label="Descobrir fragmento oculto"></button>
+
+      <!-- BOTÃO DE CICLO DE FRAGMENTOS -->
+      <section class="hint-zone">
+        <button class="hint-toggle" aria-label="Desvelar mais um intervalo">
+          •
+        </button>
+      </section>
+
+      <!-- ORÁCULO SENSORIAL (INTERPRETAÇÃO DO MOVIMENTO) -->
+      <section class="oracle-bar">
+        <p id="oracleText">O campo observa o teu primeiro gesto.</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
